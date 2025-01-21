@@ -1,7 +1,9 @@
 <template>
-  <!-- <main-layout></main-layout> -->
-  <!-- <auth-layout></auth-layout> -->
-  <component :is="layout + '-layout'" v-if="layout"></component>
+  <div>
+    <!-- <main-layout></main-layout> -->
+    <!-- <auth-layout></auth-layout> -->
+    <component :is="layout + '-layout'" v-if="layout"></component>
+  </div>
 </template>
 
 <script>

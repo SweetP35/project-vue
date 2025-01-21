@@ -15,7 +15,7 @@ const routes = [
     {
         path: '/help',
         name: 'Help',
-        components: () => import("@/views/help.vue"),
+        component: () => import("@/views/help.vue"),
         meta: {
             layout: 'main'
         }
@@ -23,7 +23,7 @@ const routes = [
     {
         path: '/auth',
         name: 'Auth',
-        components: () => import("@/views/auth.vue"),
+        component: () => import("@/views/auth.vue"),
         meta: {
             layout: 'auth'
         }
