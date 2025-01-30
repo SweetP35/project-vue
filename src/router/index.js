@@ -31,11 +31,13 @@ const routes = [
             layout: 'auth',
             auth: false
         }
-    }
+    },
 ]
 const router = createRouter({
     history: createWebHistory(import.meta.env.VITE_BASE_URL),
-    routes
+    routes,
+    linkActiveClass: 'active',
+    linkExactActiveClass: 'active'
 })
 router.beforeEach((to, from, next) => {
     const requireAuth = to.meta.auth
