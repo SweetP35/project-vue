@@ -17,10 +17,13 @@
         <td>{{ request.fio }}</td>
         <td>{{ request.phone }}</td>
         <td>{{ currency(request.amount) }}</td>
-        <td><AppStatus :type="request.status"/></td>
+        <td><AppStatus :type="request.status" /></td>
         <td>
-          <router-link v-slot="{ navigate }" custom>
-            <!-- :to="{ name: 'Request', params: { id: request.id } }" -->
+          <router-link
+            v-slot="{ navigate }"
+            custom
+            :to="{ name: 'Request', params: { id: request.id } }"
+          >
             <button class="btn" @click="navigate">Открыть</button>
           </router-link>
         </td>

@@ -32,6 +32,15 @@ const routes = [
             auth: false
         }
     },
+    {
+        path: '/request/:id',
+        name: 'Request',
+        component: () => import("@/views/request.vue"),
+        meta: {
+            layout: 'main',
+            auth: true
+        }
+    },
 ]
 const router = createRouter({
     history: createWebHistory(import.meta.env.VITE_BASE_URL),
