@@ -30,3 +30,8 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+.qodo
+
+# Environment variables
+.env
+.env.*
